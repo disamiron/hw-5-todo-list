@@ -1,0 +1,137 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+  #root {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #5d5252;
+    border-radius: 20px;
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .new-task {
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+
+  }
+
+  .new-task input {
+    float:none;
+    margin-left: 25px;
+    font-size: 20px;
+    color: #000000;
+  }
+  #add {
+
+    float:right;
+
+    background-image: url(img/add.png);
+  }
+
+  ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+  }
+
+  li {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    float:left;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  input {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #4a3e3e;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    min-width: 340px;
+    max-width: 340px;
+    height: 34px;
+    border: 1px solid #5d5252;
+    border-radius: 5px;
+    float:left;
+}
+
+  label {
+    font-size: 20px;
+    border: 1px solid #5d5252;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    min-width: 340px;
+    max-width: 340px;
+    min-height: 34px;
+    word-wrap: break-word;
+    float:left;
+    text-align: left;
+  }
+
+  button {
+    height: 34px;
+    width: 34px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #5f5d67;
+  }
+
+  .not-ready-yet .checkbox{
+    float: left;
+    background-image: url(img/success.png);
+  }
+
+  .ready-yet .checkbox{
+    float: left;
+    background-image: url(img/error.png);
+  }
+
+  .edit .save .delete {
+    float: right;
+  }
+  .edit {
+    background-image: url(img/edit.png);
+  }
+  .save {
+    background-image: url(img/save.png);
+  }
+  .delete {
+    background-image: url(img/garbage.png);
+    margin-left: 5px;
+  }
+
+  .not-ready-yet{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    display: block;
+  }
+
+  .ready-yet{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+
+  #unfiniched-task {
+    overflow:auto;
+  }
+
+  #finiched-task {
+    overflow:auto;
+  }
