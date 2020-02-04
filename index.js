@@ -1,7 +1,27 @@
 var addButton = document.getElementById("add");
 var inputTask = document.getElementById("new-task");
-var unfinichedTask = document.getElementById("unfiniched-task")
-var finichedTask = document.getElementById("finiched-task")
+var unfinichedTask = document.getElementById("unfiniched-task");
+var finichedTask = document.getElementById("finiched-task");
+var todayTime = document.getElementById("todayBlock");
+
+
+function showTime () {
+  var d = new Date();
+
+  var day=new Array("Sunday","Monday","Tuesday",
+  "Wednesday","Thursday","Friday","Saturday");
+
+  var month=new Array("Jan","Feb","Mar","Apr","May","Jun",
+  "Jul","Aug","Sep","Oct","Nov","Dec");
+
+  var today = (day[d.getDay()]+", "+ month[d.getMonth()]+ " " +d.getDate());
+
+  var timeIs = document.createElement("div");
+  timeIs.className = "monthDate";
+  timeIs.innerText = today;
+  todayTime.appendChild(timeIs);
+}
+showTime ();
 
 function createNewElement(task) {
   var listItem = document.createElement("li");
